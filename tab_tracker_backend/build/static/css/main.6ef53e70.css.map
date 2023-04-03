@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.6ef53e70.css","mappings":"AAAA,MAGE,wBAA4B,CAC5B,oBAAqB,CAHrB,kBAQF","sources":["App.css"],"sourcesContent":[".time{\n  padding-left: 617px;\n  \n  background-color: whitesmoke;\n  border-radius: 1000px;\n  \n \n \n  \n}"],"names":[],"sourceRoot":""}
