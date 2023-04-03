@@ -89,7 +89,7 @@ const HomePage = () => {
       const getOnlyUrls = async () => {
     
        
-        const response = await fetch(`http://127.0.0.1:8000/new-tab-filter`,
+        const response = await fetch(`https://web-tracker-hhjh.onrender.com/new-tab-filter`,
     
         {
           method: 'GET',
