@@ -1,14 +1,14 @@
 {
 	"manifest_version": 2,
-	"name": "Currenturl",
-	"description": "Fetches current tab url.",
+	"name": "tab tracker",
+	"description": "tracks time spent on opened websites",
 	"version": "0.1",
-	"author": "Tarun Khare",
+	"author": "Shaphat",
 	"browser_action": {
 		
 		"default_title": "Just observing your current url."
 	},
-	"permissions": ["tabs", "activeTab", "http://127.0.0.1:5000/*", "storage"],
+	"permissions": ["tabs", "activeTab", "https://web-tracker-hhjh.onrender.com/*", "storage"],
 	"background": {
 		"scripts": ["background.js"],
 		"persistent": false

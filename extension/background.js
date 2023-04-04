@@ -15,7 +15,7 @@ chrome.tabs.onActivated.addListener(function (activeInfo) {
             }
         };
         console.log(y)
-        xhttp.open("POST", "http://127.0.0.1:8000/new-tab-create");
+        xhttp.open("POST", "https://web-tracker-hhjh.onrender.com/new-tab-create");
         xhttp.setRequestHeader('Content-Type', 'application/json') 
         xhttp.send(jsonString);
 
@@ -34,7 +34,7 @@ chrome.tabs.onUpdated.addListener((tabId, change, tab) => {
             }
         };
         console.log(change.url)
-        xhttp.open("POST", "http://127.0.0.1:8000/switch-tab-create");
+        xhttp.open("POST", "https://web-tracker-hhjh.onrender.com/switch-tab-create");
         xhttp.setRequestHeader('Content-Type', 'application/json') 
         xhttp.send("url=" + change.url);
 
@@ -62,7 +62,7 @@ chrome.tabs.onRemoved.addListener(function (tabId, removeInfo) {
             console.log(this.responseText);
         }
     };
-    xhttp2.open("POST", "http://127.0.0.1:8000/quit_url");
+    xhttp2.open("POST", "https://web-tracker-hhjh.onrender.com/quit_url");
     xhttp.setRequestHeader('Content-Type', 'application/json') 
     xhttp2.send("url=" + tabToUrl[tabId]);
 
